@@ -1,38 +1,50 @@
-.App {
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Quantico', sans-serif;
+  /* overflow: hidden; */
+}
+
+:root{
+  --darkblue: #2A2F4F;
+  --darkpurple: #66347F;
+  --purple: #917FB3;
+  --pink: #E5BEEC;
+  --lightpink: #FDE2F3;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 0 2rem;
+  background-color: var(--lightpink);
+}
+nav h1{
+  font-size: 2.2rem;
+  padding-top: 1.3rem;
+  color: var(--darkblue);
+}
+nav a {
+  text-decoration: none;
+  color: var(--darkblue);
+  font-size: 2.2rem;
+  padding: 1rem 0;
+  /* transition: all 1s ease-in-out .3s; */
+}
+nav a:hover{
+  color: var(--darkpurple);
+  font-weight: 600;
+}
+
+.footer{
+  background-color: var(--pink);
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer h1{
+  margin-bottom: 0rem;
 }
